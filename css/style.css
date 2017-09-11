@@ -1,5 +1,5 @@
 #body{
-	background-color: #325fa8;
+	background-color: #ccc;
 }
 
 #custom-nav{
@@ -26,9 +26,9 @@
 	-moz-border-radius: 100px;
 	border-radius: 100px;
 	
-	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	/*-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 8px 5px rgba(0,0,0,0.1);
+	box-shadow: 0 8px 5px rgba(0,0,0,0.1);*/
 
 	height: 80px;
 	position: relative;
@@ -76,10 +76,34 @@
 	height:300px;
 }
 
+.shadow{
+	width: 220px;
+	position: absolute;
+	bottom: -35px;
+	background: #000;
+	animation: shadowAnim 3s ease-in-out infinite;
+	box-shadow: 0 0 25px 8px rgba(0,0,0,0.4);
+}
+
 .cloud-text{
 	margin-top: -19px;
 	font-size: 20px;
 	text-align: center;
+}
+
+
+@keyframes shadowAnim {
+    from {
+        transform: scale(.85)
+    }
+
+    65% {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(.85)
+    }
 }
 
 #cloud-1-upper{
