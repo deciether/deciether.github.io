@@ -1,0 +1,267 @@
+#body{
+	background-color: #325fa8;
+}
+
+#custom-nav{
+	margin-bottom: 0px;
+}
+
+.center{
+	margin: auto;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.cloud {
+	background: #fff;
+	/*background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
+	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );*/
+	
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	
+	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 5px rgba(0,0,0,0.1);
+
+	height: 80px;
+	position: relative;
+	width: 230px;
+}
+
+.cloud:after, .cloud:before {
+    background: #fff;
+	content: '';
+	position: absolute;
+	z-indeX: -1;
+}
+
+.cloud:after {
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+
+	height: 70px;
+	left: 40px;
+	top: -40px;
+	width: 70px;
+}
+
+.cloud:before {
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+
+	width: 120px;
+	height: 120px;
+	right: 35px;
+	top: -65px;
+}
+
+.cloud-container{
+	transform:scale(0.68);
+}
+
+#clouds-area-upper{
+	height: 220px;
+}
+
+#clouds-area-lower{
+	height:300px;
+}
+
+.cloud-text{
+	margin-top: -19px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#cloud-1-upper{
+	animation-name: animateCloud1;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animateCloud1{
+	from{
+		transform: translateY(100px);
+	}
+	to{
+		transform: translateY(120px);
+	}
+}
+
+#cloud-2-upper{
+	animation-name: animateCloud2;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animateCloud2{
+	from{
+		transform: translateY(270px);
+	}
+	to{
+		transform: translateY(250px);
+	}
+}
+
+#cloud-3-upper{
+	animation-name: animateCloud3;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animateCloud3{
+	from{
+		transform: translateY(120px);
+	}
+	to{
+		transform: translateY(140px);
+	}
+}
+
+#cloud-4-upper{
+	animation-name: animateCloud4;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animateCloud4{
+	from{
+		transform: translateY(300px);
+	}
+	to{
+		transform: translateY(330px);
+	}
+}
+
+#cloud-5-upper{
+	animation-name: animateCloud5;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animateCloud5{
+	from{
+		transform: translateY(150px);
+	}
+	to{
+		transform: translateY(120px);
+	}
+}
+
+#cloud-6-upper{
+	animation-name: animateCloud6;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animateCloud6{
+	from{
+		transform: translateY(400px);
+	}
+	to{
+		transform: translateY(420px);
+	}
+}
+
+
+
+
+
+#cloud-1-lower{
+	animation-name: animateLowerCloud1;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animateLowerCloud1{
+	from{
+		transform: translateY(200px);
+	}
+	to{
+		transform: translateY(220px);
+	}
+}
+
+#cloud-2-lower{
+	animation-name: animateLowerCloud2;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animateLowerCloud2{
+	from{
+		transform: translateY(250px);
+	}
+	to{
+		transform: translateY(220px);
+	}
+}
+
+#cloud-3-lower{
+	animation-name: animateLowerCloud3;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animateLowerCloud3{
+	from{
+		transform: translateY(320px);
+	}
+	to{
+		transform: translateY(290px);
+	}
+}
+
+#cloud-4-lower{
+	animation-name: animateLowerCloud4;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animateLowerCloud4{
+	from{
+		transform: translateY(340px);
+	}
+	to{
+		transform: translateY(370px);
+	}
+}
