@@ -1,18 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
 #body{
-	background-color: #ccc;
+	background-color: #CDDC39;
 }
 
 #custom-nav{
 	margin-bottom: 0px;
-}
-.ques {
-	font-family: 'Cardo', serif;
-	font-size: 2em;
-	letter-spacing: 0.1em;
-  line-height: 2.2em;
-	font-weight: bold;
-	text-shadow: 2px 2px #eee;
 }
 
 .center{
@@ -21,8 +12,21 @@
 	margin-top: 100px;
 }
 
+.bigquestion {
+ font-family: times, Times New Roman, times-roman, georgia, serif;
+ color: #673AB7;
+ margin: 0;
+ padding: 0px 0px 6px 0px;
+ line-height: 44px;
+ letter-spacing: -2px;
+ font-weight: 900;
+ text-shadow: 2px 2px #ddd;
+ text-align: center;
+ width: 100%;
+}
+
 .cloud {
-	background: #fff;
+	background: #80DEEA;
 	/*background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
 	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
@@ -45,7 +49,7 @@
 }
 
 .cloud:after, .cloud:before {
-    background: #fff;
+    background: #80DEEA;
 	content: '';
 	position: absolute;
 	z-indeX: -1;
@@ -94,13 +98,6 @@
 	box-shadow: 0 0 25px 8px rgba(0,0,0,0.4);
 }
 
-.cloud-text{
-	margin-top: -19px;
-	font-size: 20px;
-	text-align: center;
-}
-
-
 @keyframes shadowAnim {
     from {
         transform: scale(.85)
@@ -115,6 +112,61 @@
     }
 }
 
+.cloud-text{
+	font-size: 20px;
+	text-align: center;
+	color: #006064;
+}
+
+#cloud-text-1-upper{
+	margin-top: -34px;
+}
+
+#cloud-text-2-upper{
+	margin-top: -35px;
+	font-size: 17px;
+	line-height: 1.38;
+}
+
+#cloud-text-3-upper{
+	margin-top: -29px;
+	font-size: 19px;
+}
+
+#cloud-text-4-upper{
+	margin-top: -25px;
+	font-size: 18px;
+}
+
+#cloud-text-5-upper{
+	margin-top: -33px;
+}
+
+#cloud-text-6-upper{
+	margin-top: -33px;
+	font-size: 19px;
+}
+
+#cloud-text-1-lower{
+	margin-top: -30px;
+	font-size: 19px;
+}
+
+#cloud-text-2-lower{
+	margin-top: -20px;
+	font-size: 23px;
+}
+
+#cloud-text-3-lower{
+	margin-top: -30px;
+	font-size: 19px;
+}
+
+#cloud-text-4-lower{
+	margin-top: -30px;
+	font-size: 16px;
+}
+
 #cloud-1-upper{
 	animation-name: animateCloud1;
 	animation-duration: 1.5s;
@@ -126,10 +178,10 @@
 
 @keyframes animateCloud1{
 	from{
-		transform: translateY(100px);
+		transform: translateY(100px) scale(0.9);
 	}
 	to{
-		transform: translateY(120px);
+		transform: translateY(120px) scale(0.9);
 	}
 }
 
@@ -144,10 +196,10 @@
 
 @keyframes animateCloud2{
 	from{
-		transform: translateY(270px);
+		transform: translateY(270px) scale(1.35);
 	}
 	to{
-		transform: translateY(250px);
+		transform: translateY(250px) scale(1.35);
 	}
 }
 
@@ -162,10 +214,10 @@
 
 @keyframes animateCloud3{
 	from{
-		transform: translateY(120px);
+		transform: translateY(120px) scale(1.1);
 	}
 	to{
-		transform: translateY(140px);
+		transform: translateY(140px) scale(1.1);
 	}
 }
 
@@ -180,10 +232,10 @@
 
 @keyframes animateCloud4{
 	from{
-		transform: translateY(300px);
+		transform: translateY(300px) scale(1.4);
 	}
 	to{
-		transform: translateY(330px);
+		transform: translateY(330px) scale(1.4);
 	}
 }
 
@@ -216,10 +268,10 @@
 
 @keyframes animateCloud6{
 	from{
-		transform: translateY(400px);
+		transform: translateY(400px) scale(1.4);
 	}
 	to{
-		transform: translateY(420px);
+		transform: translateY(420px) scale(1.4);
 	}
 }
 
@@ -238,10 +290,10 @@
 
 @keyframes animateLowerCloud1{
 	from{
-		transform: translateY(200px);
+		transform: translateY(200px) scale(1.1);
 	}
 	to{
-		transform: translateY(220px);
+		transform: translateY(220px) scale(1.1);
 	}
 }
 
@@ -256,10 +308,10 @@
 
 @keyframes animateLowerCloud2{
 	from{
-		transform: translateY(250px);
+		transform: translateY(250px) scale(0.9);
 	}
 	to{
-		transform: translateY(220px);
+		transform: translateY(220px) scale(0.9);
 	}
 }
 
@@ -274,10 +326,10 @@
 
 @keyframes animateLowerCloud3{
 	from{
-		transform: translateY(320px);
+		transform: translateY(320px) scale(1.2);
 	}
 	to{
-		transform: translateY(290px);
+		transform: translateY(290px) scale(1.2);
 	}
 }
 
@@ -292,9 +344,9 @@
 
 @keyframes animateLowerCloud4{
 	from{
-		transform: translateY(340px);
+		transform: translateY(340px) scale(1.6);
 	}
 	to{
-		transform: translateY(370px);
+		transform: translateY(370px) scale(1.6);
 	}
 }
